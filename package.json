@@ -1,0 +1,26 @@
+{
+  "name": "babel_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/** -d dist",
+    "start": "npm run build && node dist/home.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-syntax-class-properties": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "babel-plugin-transform-class-properties": "^6.24.1"
+  },
+  "dependencies": {
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "express": "^4.17.1",
+    "regenerator-runtime": "^0.13.5"
+  }
+}
